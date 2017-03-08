@@ -13,8 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mywiget.cpp
+        mywiget.cpp \
+    mydialog.cpp
 
-HEADERS  += mywiget.h
+HEADERS  += mywiget.h \
+    mydialog.h
 
-FORMS    += mywiget.ui
+FORMS    += mywiget.ui \
+    mydialog.ui

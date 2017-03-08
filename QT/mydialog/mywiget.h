@@ -17,11 +17,11 @@ public:
 
 private:
     Ui::MyWiget *ui;
-public slots:
-    void showChildDialog();
+
 
 private slots:
     void on_showChildButton_clicked();
+    void on_pushButton_clicked();
 };
 
 

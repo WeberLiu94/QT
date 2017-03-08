@@ -29,8 +29,8 @@
   <widget class="QPushButton" name="showChildButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>170</y>
+     <x>20</x>
+     <y>180</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -39,8 +39,51 @@
     <string>显示子窗口</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>230</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>重新登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>260</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MyWiget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>265</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
