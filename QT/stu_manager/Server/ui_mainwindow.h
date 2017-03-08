@@ -60,7 +60,7 @@ public:
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tabWidget->setEnabled(true);
-        tabWidget->setGeometry(QRect(30, 15, 841, 571));
+        tabWidget->setGeometry(QRect(30, 15, 861, 571));
         tabWidget->setStyleSheet(QStringLiteral(""));
         tab_food = new QWidget();
         tab_food->setObjectName(QStringLiteral("tab_food"));
@@ -68,7 +68,6 @@ public:
         tableView_food->setObjectName(QStringLiteral("tableView_food"));
         tableView_food->setGeometry(QRect(5, 11, 841, 531));
         tabWidget->addTab(tab_food, QString());
-        tableView_food->raise();
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(510, 600, 321, 51));
@@ -88,7 +87,7 @@ public:
         lineEdit_search->setGeometry(QRect(290, 610, 211, 31));
         but_search = new QPushButton(centralWidget);
         but_search->setObjectName(QStringLiteral("but_search"));
-        but_search->setGeometry(QRect(40, 600, 221, 41));
+        but_search->setGeometry(QRect(40, 610, 221, 31));
         but_delete = new QPushButton(centralWidget);
         but_delete->setObjectName(QStringLiteral("but_delete"));
         but_delete->setGeometry(QRect(890, 370, 261, 41));
@@ -126,7 +125,6 @@ public:
         but_add->raise();
         but_id_up->raise();
         but_back->raise();
-        tableView_food->raise();
         label_comment->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));

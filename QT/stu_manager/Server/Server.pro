@@ -16,9 +16,15 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    logindialog.cpp
 
 HEADERS  += mainwindow.h \
+    logindialog.h \
     connection.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    logindialog.ui
+
+RESOURCES += \
+    res.qrc
