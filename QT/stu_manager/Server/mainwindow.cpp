@@ -10,6 +10,9 @@
 #include<QFile>
 #include<QStandardItem>
 #include"connection.h"
+#include<QFileDialog>
+#include"qexcel.h"
+#include"excelengine.h"
 
 MainWindow::MainWindow(QWidget *parent) :
    QMainWindow(parent),
@@ -31,9 +34,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
    ui->tableView_food->setModel(model);
 
-    comment();
+   comment();
     ui->background->setPixmap(QPixmap("image_s/background.png"));
-    init();
+    //init();
 }
 void MainWindow::comment()
 {
@@ -295,24 +298,36 @@ void MainWindow::exeSqlCmd(QString sqlString){
    bool b =   query.exec(sqlString);
    qDebug()<<b;
 }
+
 QString MainWindow::getSqlString(QString orderString)
 {
 
 }
 
 
+void MainWindow::on_Import_excle_clicked()
+{
+    QString FileName=QFileDialog::getOpenFileName(this,tr("选择文件"),"F:",tr("文档(* xlsx)"));
+   qDebug()<<"FileName"<<FileName;
+    ExcelEngine exc;
+     QSqlDatabase db;
+     QSqlQuery query(db);
+    int hang;
+    exc.Open(FileName);
+
+    hang=exc.GetRowCount();
+    for(int i=2;i<=hang;i++)
+    {
+            QString Data="insert into Student values(";
+            QString id=exc.GetCellData(i,1).toString();
+            QString name=exc.GetCellData(i,2).toString();
+            QString age=exc.GetCellData(i,3).toString();
+            QString situation=exc.GetCellData(i,4).toString();
+            Data=Data+id+","+"'"+name+"'"+","+age+","+situation+")";
+            qDebug()<<Data;
+            QSqlQuery query(db);
+            query.exec(QString(Data));
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

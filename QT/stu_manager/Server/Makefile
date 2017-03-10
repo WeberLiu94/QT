@@ -166,6 +166,7 @@ Makefile: Server.pro E:/qt/5.3/mingw482_32/mkspecs/win32-g++/qmake.conf E:/qt/5.
 		E:/qt/5.3/mingw482_32/mkspecs/features/moc.prf \
 		E:/qt/5.3/mingw482_32/mkspecs/features/win32/opengl.prf \
 		E:/qt/5.3/mingw482_32/mkspecs/features/uic.prf \
+		E:/qt/5.3/mingw482_32/mkspecs/features/win32/dumpcpp.prf \
 		E:/qt/5.3/mingw482_32/mkspecs/features/win32/windows.prf \
 		E:/qt/5.3/mingw482_32/mkspecs/features/testcase_targets.prf \
 		E:/qt/5.3/mingw482_32/mkspecs/features/exceptions.prf \
@@ -174,11 +175,13 @@ Makefile: Server.pro E:/qt/5.3/mingw482_32/mkspecs/win32-g++/qmake.conf E:/qt/5.
 		Server.pro \
 		E:/qt/5.3/mingw482_32/lib/qtmaind.prl \
 		E:/qt/5.3/mingw482_32/lib/Qt5Cored.prl \
+		E:/qt/5.3/mingw482_32/lib/Qt5AxContainer.prl \
+		E:/qt/5.3/mingw482_32/lib/Qt5AxBase.prl \
+		E:/qt/5.3/mingw482_32/lib/Qt5Gui.prl \
+		E:/qt/5.3/mingw482_32/lib/Qt5Core.prl \
 		E:/qt/5.3/mingw482_32/lib/Qt5Widgets.prl \
 		E:/qt/5.3/mingw482_32/lib/Qt5Sql.prl \
-		E:/qt/5.3/mingw482_32/lib/Qt5Network.prl \
-		E:/qt/5.3/mingw482_32/lib/Qt5Gui.prl \
-		E:/qt/5.3/mingw482_32/lib/Qt5Core.prl
+		E:/qt/5.3/mingw482_32/lib/Qt5Network.prl
 	$(QMAKE) -spec win32-g++ CONFIG+=debug -o Makefile Server.pro
 E:\qt\5.3\mingw482_32\mkspecs\features\spec_pre.prf:
 E:\qt\5.3\mingw482_32\mkspecs\qdevice.pri:
@@ -287,6 +290,7 @@ E:\qt\5.3\mingw482_32\mkspecs\features\resources.prf:
 E:\qt\5.3\mingw482_32\mkspecs\features\moc.prf:
 E:\qt\5.3\mingw482_32\mkspecs\features\win32\opengl.prf:
 E:\qt\5.3\mingw482_32\mkspecs\features\uic.prf:
+E:\qt\5.3\mingw482_32\mkspecs\features\win32\dumpcpp.prf:
 E:\qt\5.3\mingw482_32\mkspecs\features\win32\windows.prf:
 E:\qt\5.3\mingw482_32\mkspecs\features\testcase_targets.prf:
 E:\qt\5.3\mingw482_32\mkspecs\features\exceptions.prf:
@@ -295,11 +299,13 @@ E:\qt\5.3\mingw482_32\mkspecs\features\lex.prf:
 Server.pro:
 E:/qt/5.3/mingw482_32/lib/qtmaind.prl:
 E:/qt/5.3/mingw482_32/lib/Qt5Cored.prl:
+E:/qt/5.3/mingw482_32/lib/Qt5AxContainer.prl:
+E:/qt/5.3/mingw482_32/lib/Qt5AxBase.prl:
+E:/qt/5.3/mingw482_32/lib/Qt5Gui.prl:
+E:/qt/5.3/mingw482_32/lib/Qt5Core.prl:
 E:/qt/5.3/mingw482_32/lib/Qt5Widgets.prl:
 E:/qt/5.3/mingw482_32/lib/Qt5Sql.prl:
 E:/qt/5.3/mingw482_32/lib/Qt5Network.prl:
-E:/qt/5.3/mingw482_32/lib/Qt5Gui.prl:
-E:/qt/5.3/mingw482_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -spec win32-g++ CONFIG+=debug -o Makefile Server.pro
 

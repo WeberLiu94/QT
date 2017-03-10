@@ -64,6 +64,8 @@ private slots:
 
    //void on_tabWidget_currentChanged(int index);
 
+   void on_Import_excle_clicked();
+
 private:
    Ui::MainWindow *ui;
    QTcpSocket *tcpSocket=NULL;

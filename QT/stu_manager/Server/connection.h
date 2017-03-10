@@ -29,11 +29,6 @@ static bool createConnection()
 
 
 
-    //插入学生信息
-     query.exec(QString("  insert into Student values(1,'孙磊',23,1)"));
-     query.exec(QString("  insert into Student values(2,'詹姆斯',23,1)"));
-     query.exec(QString("  insert into Student values(3,'乔丹',23,1)"));
-
 
     return true;
 }

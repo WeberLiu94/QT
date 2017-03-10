@@ -17,14 +17,18 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    logindialog.cpp
+    logindialog.cpp \
+    excelengine.cpp
 
 HEADERS  += mainwindow.h \
     logindialog.h \
-    connection.h
+    connection.h \
+    excelengine.h
 
 FORMS    += mainwindow.ui \
     logindialog.ui
 
 RESOURCES += \
     res.qrc
+QT += axcontainer
+

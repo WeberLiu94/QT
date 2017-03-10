@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[16];
-    char stringdata[300];
+    QByteArrayData data[17];
+    char stringdata[324];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -44,7 +44,8 @@ QT_MOC_LITERAL(11, 186, 22),
 QT_MOC_LITERAL(12, 209, 21),
 QT_MOC_LITERAL(13, 231, 18),
 QT_MOC_LITERAL(14, 250, 27),
-QT_MOC_LITERAL(15, 278, 21)
+QT_MOC_LITERAL(15, 278, 21),
+QT_MOC_LITERAL(16, 300, 23)
     },
     "MainWindow\0acceptConnection\0\0displayError\0"
     "QAbstractSocket::SocketError\0revData\0"
@@ -53,7 +54,7 @@ QT_MOC_LITERAL(15, 278, 21)
     "on_but_id_up_clicked\0on_but_id_down_clicked\0"
     "on_but_delete_clicked\0on_but_add_clicked\0"
     "on_tabWidget_currentChanged\0"
-    "on_pushButton_clicked"
+    "on_pushButton_clicked\0on_Import_excle_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -63,7 +64,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -71,23 +72,25 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   79,    2, 0x08 /* Private */,
-       3,    1,   80,    2, 0x08 /* Private */,
-       5,    0,   83,    2, 0x08 /* Private */,
-       6,    0,   84,    2, 0x08 /* Private */,
-       7,    0,   85,    2, 0x08 /* Private */,
-       8,    0,   86,    2, 0x08 /* Private */,
-       9,    0,   87,    2, 0x08 /* Private */,
-      10,    0,   88,    2, 0x08 /* Private */,
-      11,    0,   89,    2, 0x08 /* Private */,
-      12,    0,   90,    2, 0x08 /* Private */,
-      13,    0,   91,    2, 0x08 /* Private */,
-      14,    0,   92,    2, 0x08 /* Private */,
-      15,    0,   93,    2, 0x08 /* Private */,
+       1,    0,   84,    2, 0x08 /* Private */,
+       3,    1,   85,    2, 0x08 /* Private */,
+       5,    0,   88,    2, 0x08 /* Private */,
+       6,    0,   89,    2, 0x08 /* Private */,
+       7,    0,   90,    2, 0x08 /* Private */,
+       8,    0,   91,    2, 0x08 /* Private */,
+       9,    0,   92,    2, 0x08 /* Private */,
+      10,    0,   93,    2, 0x08 /* Private */,
+      11,    0,   94,    2, 0x08 /* Private */,
+      12,    0,   95,    2, 0x08 /* Private */,
+      13,    0,   96,    2, 0x08 /* Private */,
+      14,    0,   97,    2, 0x08 /* Private */,
+      15,    0,   98,    2, 0x08 /* Private */,
+      16,    0,   99,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 4,    2,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -121,6 +124,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 10: _t->on_but_add_clicked(); break;
         case 11: _t->on_tabWidget_currentChanged(); break;
         case 12: _t->on_pushButton_clicked(); break;
+        case 13: _t->on_Import_excle_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -162,13 +166,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 14;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 14;
     }
     return _id;
 }

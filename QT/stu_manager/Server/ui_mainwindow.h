@@ -46,6 +46,7 @@ public:
     QPushButton *but_back;
     QLabel *background;
     QLabel *label_comment;
+    QPushButton *Import_excle;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -81,7 +82,7 @@ public:
         label->setStyleSheet(QString::fromUtf8("font: 15pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
         but_choose = new QPushButton(centralWidget);
         but_choose->setObjectName(QStringLiteral("but_choose"));
-        but_choose->setGeometry(QRect(890, 50, 261, 51));
+        but_choose->setGeometry(QRect(890, 30, 261, 51));
         lineEdit_search = new QLineEdit(centralWidget);
         lineEdit_search->setObjectName(QStringLiteral("lineEdit_search"));
         lineEdit_search->setGeometry(QRect(290, 610, 211, 31));
@@ -90,28 +91,31 @@ public:
         but_search->setGeometry(QRect(40, 610, 221, 31));
         but_delete = new QPushButton(centralWidget);
         but_delete->setObjectName(QStringLiteral("but_delete"));
-        but_delete->setGeometry(QRect(890, 370, 261, 41));
+        but_delete->setGeometry(QRect(890, 290, 261, 51));
         but_id_down = new QPushButton(centralWidget);
         but_id_down->setObjectName(QStringLiteral("but_id_down"));
-        but_id_down->setGeometry(QRect(890, 540, 261, 41));
+        but_id_down->setGeometry(QRect(890, 420, 261, 51));
         but_submit = new QPushButton(centralWidget);
         but_submit->setObjectName(QStringLiteral("but_submit"));
-        but_submit->setGeometry(QRect(890, 220, 261, 41));
+        but_submit->setGeometry(QRect(890, 170, 261, 51));
         but_add = new QPushButton(centralWidget);
         but_add->setObjectName(QStringLiteral("but_add"));
-        but_add->setGeometry(QRect(890, 140, 261, 51));
+        but_add->setGeometry(QRect(890, 100, 261, 51));
         but_id_up = new QPushButton(centralWidget);
         but_id_up->setObjectName(QStringLiteral("but_id_up"));
-        but_id_up->setGeometry(QRect(890, 450, 261, 41));
+        but_id_up->setGeometry(QRect(890, 360, 261, 51));
         but_back = new QPushButton(centralWidget);
         but_back->setObjectName(QStringLiteral("but_back"));
-        but_back->setGeometry(QRect(890, 300, 261, 41));
+        but_back->setGeometry(QRect(890, 230, 261, 51));
         background = new QLabel(centralWidget);
         background->setObjectName(QStringLiteral("background"));
         background->setGeometry(QRect(13, 1, 1271, 701));
         label_comment = new QLabel(centralWidget);
         label_comment->setObjectName(QStringLiteral("label_comment"));
         label_comment->setGeometry(QRect(610, 0, 261, 31));
+        Import_excle = new QPushButton(centralWidget);
+        Import_excle->setObjectName(QStringLiteral("Import_excle"));
+        Import_excle->setGeometry(QRect(890, 490, 261, 51));
         MainWindow->setCentralWidget(centralWidget);
         background->raise();
         tabWidget->raise();
@@ -126,6 +130,7 @@ public:
         but_id_up->raise();
         but_back->raise();
         label_comment->raise();
+        Import_excle->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 1302, 23));
@@ -163,6 +168,7 @@ public:
         but_back->setText(QApplication::translate("MainWindow", "\346\222\244\351\224\200\344\277\256\346\224\271", 0));
         background->setText(QApplication::translate("MainWindow", "TextLabel", 0));
         label_comment->setText(QApplication::translate("MainWindow", "\345\244\207\346\263\250\357\274\232", 0));
+        Import_excle->setText(QApplication::translate("MainWindow", "\345\257\274\345\205\245\346\226\207\344\273\266", 0));
     } // retranslateUi
 
 };
