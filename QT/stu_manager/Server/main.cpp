@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     if(!createConnection()) return 1;
     MainWindow w;
 
-    w.setWindowTitle(QObject::tr("学生信息管理系统 version1.0"));
+    w.setWindowTitle(QObject::tr("克拉玛依中心医院远程教学学员听课管理系统 version1.0"));
     LoginDialog dlg;
    if(dlg.exec()==QDialog::Accepted)
    {

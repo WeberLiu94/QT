@@ -64,7 +64,7 @@ public:
 
         label = new QLabel(LoginDialog);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(50, 50, 301, 31));
+        label->setGeometry(QRect(40, 10, 331, 101));
         label->setStyleSheet(QString::fromUtf8("font: 18pt \"\345\215\216\346\226\207\350\241\214\346\245\267\";"));
         label_2 = new QLabel(LoginDialog);
         label_2->setObjectName(QStringLiteral("label_2"));
@@ -110,7 +110,8 @@ public:
         LoginDialog->setWindowTitle(QApplication::translate("LoginDialog", "Dialog", 0));
         loginBtn->setText(QApplication::translate("LoginDialog", "\347\231\273\351\231\206", 0));
         quitBtn->setText(QApplication::translate("LoginDialog", "\351\200\200\345\207\272", 0));
-        label->setText(QApplication::translate("LoginDialog", "\346\254\242\350\277\216\344\275\277\347\224\250\345\255\246\347\224\237\344\277\241\346\201\257\347\256\241\347\220\206\347\263\273\347\273\237", 0));
+        label->setText(QApplication::translate("LoginDialog", "\346\254\242\350\277\216\344\275\277\347\224\250\345\205\213\346\213\211\347\216\233\344\276\235\344\270\255\345\277\203\345\214\273\351\231\242\n"
+"\350\277\234\347\250\213\346\225\231\345\255\246\345\255\246\345\221\230\345\220\254\350\257\276\347\256\241\347\220\206\347\263\273\347\273\237", 0));
         label_2->setText(QApplication::translate("LoginDialog", "\345\257\206\347\240\201", 0));
         label_3->setText(QApplication::translate("LoginDialog", "\347\211\210\346\234\254\357\274\2321.0", 0));
         label_4->setText(QApplication::translate("LoginDialog", "TextLabel", 0));
