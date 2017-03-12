@@ -88,7 +88,7 @@ $(DESTDIR_TARGET): E:/qt/5.3/mingw482_32/lib/libQt5AxContainer.a E:/qt/5.3/mingw
 	$(LINKER) $(LFLAGS) -o $(DESTDIR_TARGET) $(OBJECTS)  $(LIBS)
 
 qmake: FORCE
-	@$(QMAKE) -spec win32-g++ CONFIG+=debug -o Makefile.Release Server.pro
+	@$(QMAKE) -spec win32-g++ -o Makefile.Release Server.pro
 
 qmake_all: FORCE
 
