@@ -34,6 +34,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
    ui->tableView_food->setModel(model);
 
+
    comment();
     ui->background->setPixmap(QPixmap("image_s/background.png"));
     //init();

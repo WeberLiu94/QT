@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\logindialog.o
+./release\excelengine.o
+./release\labor.o
+./release\fanancial.o
+./release\qrc_res.o
+./release\moc_mainwindow.o
+./release\moc_logindialog.o
+./release\moc_labor.o
+./release\moc_fanancial.o
+);
