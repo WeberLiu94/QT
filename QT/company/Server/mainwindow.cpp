@@ -15,6 +15,8 @@
 #include"excelengine.h"
 #include"labor.h"
 #include "connection.h"
+#include "fanancial.h"
+
 
 MainWindow::MainWindow(QWidget *parent) :
    QMainWindow(parent),
@@ -24,9 +26,15 @@ MainWindow::MainWindow(QWidget *parent) :
    ui->setupUi(this);
    //
    setFixedSize(880,450);
+//   QSqlQuery query;
+//   query.exec("select * from leader");
+//   while(query.next())
+//   {
+//    qDebug()<<query.value(0).toInt()<<query.value(1).toString();
+//   }
 
     ui->background->setPixmap(QPixmap("image_s/background.png"));
-    connect(ui->Labor,SIGNAL(clicked()),this,SLOT(Laborshow()));
+   connect(ui->Labor,SIGNAL(clicked()),this,SLOT(Laborshow()));
 }
 
 
@@ -106,4 +114,10 @@ void MainWindow::Laborshow()
     Labor *labor=new Labor(this);
     labor->show();
 
+}
+
+void MainWindow::on_fanancial_clicked()
+{
+    fanancial *fan=new fanancial(this);
+    fan->show();
 }

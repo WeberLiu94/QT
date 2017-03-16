@@ -29,6 +29,13 @@ static bool createConnection()
                        "'姓名' varchar(50),'年龄' int ,'职务'vchar(50),'联系方式' String)"));//创建销售人员表格
     query.exec(QString("create table Research('序号' int primary key,"
                        "'姓名' varchar(50),'年龄' int ,'职务' vchar(50),'联系方式' String)"));//创建研发人员表格
+   query.exec(QString("create table Wage('序号' int primary key,"
+                      "'姓名' varchar(50),'年龄' int ,'职务' vchar(50),'薪水' String,'备注' varchar(50))"));//创建研发人员表格
+    //query.exec(QString("create table Wage('序号' int primary key,"
+                       //"'姓名' varchar(50),'年龄' int ,'职务' vchar(50))"));//创建研发人员表格
+
+
+
 
 
 

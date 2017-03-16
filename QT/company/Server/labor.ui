@@ -23,7 +23,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="Leaders">
     <attribute name="title">
@@ -165,16 +165,6 @@
     <string>返回</string>
    </property>
   </widget>
-  <zorder>tabWidget</zorder>
-  <zorder>refresh</zorder>
-  <zorder>add_person</zorder>
-  <zorder>delete_person</zorder>
-  <zorder>save</zorder>
-  <zorder>search</zorder>
-  <zorder>lineEdit_search</zorder>
-  <zorder>return_2</zorder>
-  <zorder>tableView_reserch</zorder>
-  <zorder>tableView_leader</zorder>
  </widget>
  <resources/>
  <connections/>

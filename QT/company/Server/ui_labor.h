@@ -88,20 +88,10 @@ public:
         return_2 = new QPushButton(Labor);
         return_2->setObjectName(QStringLiteral("return_2"));
         return_2->setGeometry(QRect(760, 270, 71, 31));
-        tabWidget->raise();
-        refresh->raise();
-        add_person->raise();
-        delete_person->raise();
-        save->raise();
-        search->raise();
-        lineEdit_search->raise();
-        return_2->raise();
-        tableView_reserch->raise();
-        tableView_leader->raise();
 
         retranslateUi(Labor);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(Labor);

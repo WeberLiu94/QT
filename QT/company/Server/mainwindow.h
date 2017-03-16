@@ -30,6 +30,8 @@ public:
 private slots:
     void Laborshow();
 
+    void on_fanancial_clicked();
+
 private:
    Ui::MainWindow *ui;
 
