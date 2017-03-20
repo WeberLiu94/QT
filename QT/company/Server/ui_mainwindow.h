@@ -32,7 +32,8 @@ public:
     QLabel *label;
     QPushButton *Labor;
     QPushButton *fanancial;
-    QPushButton *store;
+    QPushButton *kaoqin;
+    QPushButton *buy_goods;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -56,10 +57,13 @@ public:
         Labor->setGeometry(QRect(350, 130, 161, 41));
         fanancial = new QPushButton(centralWidget);
         fanancial->setObjectName(QStringLiteral("fanancial"));
-        fanancial->setGeometry(QRect(350, 230, 161, 41));
-        store = new QPushButton(centralWidget);
-        store->setObjectName(QStringLiteral("store"));
-        store->setGeometry(QRect(350, 320, 161, 41));
+        fanancial->setGeometry(QRect(350, 190, 161, 41));
+        kaoqin = new QPushButton(centralWidget);
+        kaoqin->setObjectName(QStringLiteral("kaoqin"));
+        kaoqin->setGeometry(QRect(350, 250, 161, 41));
+        buy_goods = new QPushButton(centralWidget);
+        buy_goods->setObjectName(QStringLiteral("buy_goods"));
+        buy_goods->setGeometry(QRect(350, 310, 161, 41));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -83,8 +87,9 @@ public:
         background->setText(QApplication::translate("MainWindow", "TextLabel", 0));
         label->setText(QApplication::translate("MainWindow", "\346\254\242\350\277\216\344\275\277\347\224\250\344\274\201\344\270\232\344\277\241\346\201\257\347\256\241\347\220\206\347\263\273\347\273\237", 0));
         Labor->setText(QApplication::translate("MainWindow", "\344\272\272\344\272\213\347\256\241\347\220\206", 0));
-        fanancial->setText(QApplication::translate("MainWindow", "\350\264\242\345\212\241\347\256\241\347\220\206", 0));
-        store->setText(QApplication::translate("MainWindow", "\345\272\223\345\255\230\347\256\241\347\220\206", 0));
+        fanancial->setText(QApplication::translate("MainWindow", "\345\267\245\350\265\204\347\256\241\347\220\206", 0));
+        kaoqin->setText(QApplication::translate("MainWindow", "\350\200\203\345\213\244\347\256\241\347\220\206", 0));
+        buy_goods->setText(QApplication::translate("MainWindow", "\351\207\207\350\264\255\347\256\241\347\220\206", 0));
     } // retranslateUi
 
 };

@@ -60,26 +60,39 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>230</y>
+      <y>190</y>
       <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>财务管理</string>
+     <string>工资管理</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="store">
+   <widget class="QPushButton" name="kaoqin">
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>320</y>
+      <y>250</y>
       <width>161</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>库存管理</string>
+     <string>考勤管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buy_goods">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>310</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>采购管理</string>
     </property>
    </widget>
   </widget>

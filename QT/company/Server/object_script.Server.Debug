@@ -5,9 +5,13 @@ INPUT(
 ./debug\excelengine.o
 ./debug\labor.o
 ./debug\fanancial.o
+./debug\kaoqing.o
+./debug\buy.o
 ./debug\qrc_res.o
 ./debug\moc_mainwindow.o
 ./debug\moc_logindialog.o
 ./debug\moc_labor.o
 ./debug\moc_fanancial.o
+./debug\moc_kaoqing.o
+./debug\moc_buy.o
 );

@@ -33,10 +33,7 @@ void LoginDialog::on_loginBtn_clicked()
     }
     else
     {
-//        QSqlQuery query;
-//        query.exec("select pwd from password");
-//        query.next();
-//        if(query.value(0).toString()==ui->pwdLineEdit->text())
+
         if("1"==ui->pwdLineEdit->text())
         {
             QDialog::accept();

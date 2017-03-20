@@ -21,6 +21,7 @@
 #include<QFileDialog>
 #include"qexcel.h"
 #include"excelengine.h"
+#include"labor.h"
 
 namespace Ui {
 class fanancial;
@@ -32,6 +33,9 @@ class fanancial : public QWidget
 
 public:
     explicit fanancial(QWidget *parent = 0);
+    void add_salary();
+    void remove_salary();
+
     ~fanancial();
 
 private slots:
@@ -41,9 +45,14 @@ private slots:
 
     void on_get_names_clicked();
 
+
+
 private:
     Ui::fanancial *ui;
      QSqlTableModel *model;
 };
+extern int Dele_id;
+extern int Add_id;
+
 
 #endif // FANANCIAL_H

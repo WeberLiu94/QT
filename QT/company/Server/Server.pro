@@ -20,19 +20,25 @@ SOURCES += main.cpp\
     logindialog.cpp \
     excelengine.cpp \
     labor.cpp \
-    fanancial.cpp
+    fanancial.cpp \
+    kaoqing.cpp \
+    buy.cpp
 
 HEADERS  += mainwindow.h \
     logindialog.h \
     connection.h \
     excelengine.h \
     labor.h \
-    fanancial.h
+    fanancial.h \
+    kaoqing.h \
+    buy.h
 
 FORMS    += mainwindow.ui \
     logindialog.ui \
     labor.ui \
-    fanancial.ui
+    fanancial.ui \
+    kaoqing.ui \
+    buy.ui
 
 RESOURCES += \
     res.qrc

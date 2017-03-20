@@ -30,6 +30,7 @@ class Labor : public QWidget
 
 public:
     explicit Labor(QWidget *parent = 0);
+
     ~Labor();
 
 private slots:
@@ -50,9 +51,13 @@ private slots:
 
     void on_return_2_clicked();
 
+    void on_import_exc_clicked();
+
 private:
     Ui::Labor *ui;
     QSqlTableModel *model,*mode2,*mode3;
 };
+extern QString salary_now[100];
+extern QString extra_s_now[100];
 
 #endif // LABOR_H

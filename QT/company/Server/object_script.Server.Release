@@ -5,9 +5,13 @@ INPUT(
 ./release\excelengine.o
 ./release\labor.o
 ./release\fanancial.o
+./release\kaoqing.o
+./release\buy.o
 ./release\qrc_res.o
 ./release\moc_mainwindow.o
 ./release\moc_logindialog.o
 ./release\moc_labor.o
 ./release\moc_fanancial.o
+./release\moc_kaoqing.o
+./release\moc_buy.o
 );
